@@ -119,6 +119,11 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText
 }
 
+button:disabled {
+  background-image: none;
+  background-color: #ccc;
+}
+
 fieldset {
   padding: 0.35em 0.75em 0.625em
 }

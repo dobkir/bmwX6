@@ -1,32 +1,35 @@
 //================ The Final variant that works in the Safari browser ================//
-const SPEED = .5;
-const scrolled = event => {
-  event.preventDefault();
 
-  const target = event.target;
-  if (target.matches('[href^="#"]')) {
-    let start = 0;
-    const pageY = window.pageYOffset;
-    const hash = target.getAttribute('href');
-    if (hash === '#') return;
-    const elem = document.querySelector(hash);
-    const coordinateElem = elem.getBoundingClientRect().top;
-    const step = time => {
-      if (!start) start = time;
-      const progress = time - start;
+export default function smoothScroll(SPEED = .5) {
+  const scrolled = event => {
 
-      const r = (coordinateElem < 0 ?
-        Math.max(pageY - progress / SPEED, pageY + coordinateElem) :
-        Math.min(pageY + progress / SPEED, pageY + coordinateElem));
+    const target = event.target;
+    if (target.matches('[href^="#"]')) {
+      event.preventDefault();
+      let start = 0;
+      const pageY = window.pageYOffset;
+      const hash = target.getAttribute('href');
+      if (hash === '#') return;
+      const elem = document.querySelector(hash);
+      const coordinateElem = elem.getBoundingClientRect().top;
+      const step = time => {
+        if (!start) start = time;
+        const progress = time - start;
 
-      window.scroll(0, r)
-      if (r < pageY + coordinateElem) requestAnimationFrame(step);
+        const r = (coordinateElem < 0 ?
+          Math.max(pageY - progress / SPEED, pageY + coordinateElem) :
+          Math.min(pageY + progress / SPEED, pageY + coordinateElem));
+
+        window.scroll(0, r)
+        if (r < pageY + coordinateElem) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
     }
-    requestAnimationFrame(step);
-  }
-};
+  };
 
-document.body.addEventListener('click', scrolled);
+  document.body.addEventListener('click', scrolled);
+}
+
 //================ The end of the Final variant that works in the Safari browser ================//
 
 
