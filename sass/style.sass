@@ -16,6 +16,7 @@
   &__logo
     display: block
     margin-right: 95px
+    font-size: 0
 
 .menu
   &-list
@@ -202,11 +203,13 @@
 
 /* modal */
 .modal
-  position: fixed
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
+  &-feedback,
+  &-video
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
   &-wrapper
     position: fixed
     top: 50%
@@ -220,6 +223,23 @@
     background-color: $dark
     padding: 71px 57px
     border: 1px solid $white
+  &-video--wrapper
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 9
+    height: 90%
+    width: 90%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    background-color: #080808
+    border: 1px solid #202020
+  &-video--frame
+    width: 90%
+    height: 90%
+    position: relative
+    top: 5%
+    left: 5%
   &__title
     margin-bottom: 23px
   &__descr
@@ -244,6 +264,14 @@
     background-size: contain
     &:focus
       outline: none
+
+.watch-video
+  color: #E8223A
+  font-size: 16px
+  padding: 5px
+  line-height: 1.6
+  background-color: transparent
+  border: none
 .close
   font-weight: bold
   font-size: 16px

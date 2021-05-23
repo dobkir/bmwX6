@@ -3,47 +3,51 @@ const { disableScroll, enableScroll } = obj;
 
 export default function modal() {
 
-  const moreElems = document.querySelectorAll('.more');
-  const modalElem = document.querySelector('.modal');
+  const moreFeedbackElems = document.querySelectorAll('.more');
+  const videoElem = document.querySelector('.watch-video');
 
-  const openModal = () => {
-    modalElem.classList.remove('hidden');
+  const modalFeedbackElem = document.querySelector('.modal-feedback');
+  const modalVideoElem = document.querySelector('.modal-video');
+  const typesOfModal = [modalFeedbackElem, modalVideoElem];
+
+  const openModal = (type) => {
+    type.classList.remove('hidden');
     // Disable scrolling (module blockScrolled.js)
     disableScroll();
   };
 
-  const closeModal = () => {
-    modalElem.classList.add('hidden');
+  const closeModal = (type) => {
+    type.classList.add('hidden');
     // Enable scrolling (module blockScrolled.js)
     enableScroll();
   };
 
-  moreElems.forEach(elem => {
-    elem.addEventListener('click', openModal);
+  videoElem.addEventListener('click', () => {
+    openModal(modalVideoElem);
+  });
+
+  moreFeedbackElems.forEach(elem => {
+    elem.addEventListener('click', () => {
+      openModal(modalFeedbackElem);
+    });
   })
 
-  modalElem.addEventListener('click', (event) => {
-    const target = event.target;
-    // contains() checks for classes, matches() checks for selectors.
-    if (target.classList.contains('overlay') ||
-      target.classList.contains('modal__close')) closeModal();
-    // or such notation (with matches()):
-    // if (target.matches('.overlay, .modal__close')) {
-    //   closeModal()
-    // }
+  typesOfModal.forEach(typeOfModal => {
+
+    // close modal by click on Esc-key
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeModal(typeOfModal);
+    })
+
+    // close modal by click on overlay or by cross on the right top corner
+    typeOfModal.addEventListener('click', (event) => {
+
+      const target = event.target;
+
+      if (target.matches('.overlay, .modal__close')) {
+        closeModal(typeOfModal)
+      }
+    })
   })
+
 }
-
-//=============== The Example with the Delegation ===============//
-
-// const designBlockElem = document.querySelector('.design-block');
-
-// designBlockElem.addEventListener('click', event => {
-//   const target = event.target;
-// // matches() checks for selectors.
-//   if (target.matches('.more')) {
-//     openModal();
-//   }
-// })
-
-//=============== The end of Example with the Delegation ===============//

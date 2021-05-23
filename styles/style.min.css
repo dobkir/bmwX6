@@ -300,7 +300,8 @@ a {
 
 .header__logo {
   display: block;
-  margin-right: 95px
+  margin-right: 95px;
+  font-size: 0
 }
 
 .menu-list {
@@ -385,7 +386,7 @@ a {
   outline: none
 }
 
-.play {
+.playvideo {
   display: block;
   background-image: url("../img/icon/play.svg");
   background-size: contain;
@@ -393,6 +394,10 @@ a {
   padding-left: 30px;
   border: none;
   color: #E8223A
+}
+
+.playvideo__comment {
+  margin-left: 40px;
 }
 
 .play:focus {
@@ -586,7 +591,8 @@ a {
   min-width: 220px
 }
 
-.modal {
+.modal-feedback,
+.modal-video {
   position: fixed;
   top: 0;
   left: 0;
@@ -1042,6 +1048,36 @@ a {
   .contacts-form {
     padding-top: 190px
   }
+}
+
+.watch-video {
+  color: #E8223A;
+  font-size: 16px;
+  padding: 5px;
+  line-height: 1.6;
+  background-color: transparent;
+  border: none
+}
+
+.modal-video--wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  height: 90%;
+  width: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #080808;
+  border: 1px solid #202020
+}
+
+.modal-video--frame {
+  width: 90%;
+  height: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%
 }
 
 /*# sourceMappingURL=style.min.css.map */
