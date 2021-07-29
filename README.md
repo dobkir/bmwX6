@@ -13,8 +13,10 @@
 <!-- WORK DESCRIPTION -->
 ## Work description
 
-This is a BMW car promo website template. Modal windows are used: 1) to display an advertising video; 
-2) customer request for detailed description. The test drive application form is working. 
+This is a BMW car promo website template.<br> 
+Modal windows are used: 1) to display an advertising video; 
+2) customer request for detailed description.<br> 
+The test drive application form is working. 
 Form fields with a simple check for completeness. In the sending code, in the "server" constant, you 
 only need to enter the real server. Here, for example, a fake server https://jsonplaceholder.typicode.com/posts 
 is used. In the "Specifications" section, "accordion" is used.
