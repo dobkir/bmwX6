@@ -1,4 +1,4 @@
-# :Automobile on Messenger 1.0: BMW X6 :Automobile on Messenger 1.0: promo website
+# :oncoming_automobile: BMW X6 :oncoming_automobile: promo website
 
 [![Contributors][contributors-shield]][contributors-url]&nbsp;
 [![Forks][forks-shield]][forks-url]&nbsp;
@@ -39,9 +39,8 @@ Pure template on HTML5/Sass. It was created without a task runner, without a fra
 ![HTML5](https://img.shields.io/badge/HTML5-38%25-e34c26?logo=Html5&logoColor=e34c26&style=for-the-badge)<br>
 ![JavaScript](https://img.shields.io/badge/JavaScript-20.7%25-f1e05a?logo=JavaScript&logoColor=f1e05a&style=for-the-badge)<br>
 
-- normalize.css<br>
+- [normalize.css](https://github.com/necolas/normalize.css)<br>
 A modern alternative to CSS resets<br>
-![normalize.css](https://github.com/necolas/normalize.css)
 
 - IDE<br>
 💻 VS Code
