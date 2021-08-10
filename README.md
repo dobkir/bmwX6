@@ -84,5 +84,5 @@ Project Link: [https://github.com/dobkir/bmwX6](https://github.com/dobkir/bmwX6)
 [linkedin-url]: https://www.linkedin.com/in/pavel-kirillov-dobkir
 [repo-size-shield]: https://img.shields.io/github/repo-size/dobkir/bmwX6.svg?style=for-the-badge
 [languages-shield]: https://img.shields.io/github/languages/count/dobkir/bmwX6.svg?style=for-the-badge
-[main-language-shield]: https://img.shields.io/github/languages/top/dobkir/bmwX6.svg?style=for-the-badge&color=563d7c
+[main-language-shield]: https://img.shields.io/github/languages/top/dobkir/bmwX6.svg?style=for-the-badge&color=bf4080
 [product-screenshot]: https://github.com/dobkir/trailers/blob/master/bmwX6_trailer/bmwX6_trailer.gif
