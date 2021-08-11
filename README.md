@@ -1,4 +1,4 @@
-# :oncoming_automobile: BMW X6 :oncoming_automobile: promo website
+# <img src="https://img.icons8.com/material/24/4a90e2/bmw.png"/> BMW X6 <img src="https://img.icons8.com/material/24/4a90e2/bmw.png"/> promo website
 
 [![Contributors][contributors-shield]][contributors-url]&nbsp;
 [![Forks][forks-shield]][forks-url]&nbsp;
@@ -45,7 +45,8 @@ Pure template on HTML5/Sass. It was created without a task runner, without a fra
 A modern alternative to CSS resets<br>
 
 - IDE<br>
-💻 VS Code
+![VSCode](https://img.icons8.com/color/48/000000/visual-studio-code-2019.png)<br>
+ [VSCode](https://code.visualstudio.com/)
 
 <!-- LICENSE -->
 ## License
@@ -61,7 +62,7 @@ Project Link: [https://github.com/dobkir/bmwX6](https://github.com/dobkir/bmwX6)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-- [Emojipedia](https://emojipedia.org/)
+- [ICONS8](https://icons8.com/)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
