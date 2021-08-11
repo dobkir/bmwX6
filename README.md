@@ -1,4 +1,4 @@
-# ![BMW logo icon](<img src="https://img.icons8.com/material/24/4a90e2/bmw.png"/>) BMW X6 ![BMW logo icon](<img src="https://img.icons8.com/material/24/4a90e2/bmw.png"/>) promo website
+# ![BMW logo icon](https://img.icons8.com/material/24/4a90e2/bmw.png) BMW X6 ![BMW logo icon](https://img.icons8.com/material/24/4a90e2/bmw.png) promo website
 
 [![Contributors][contributors-shield]][contributors-url]&nbsp;
 [![Forks][forks-shield]][forks-url]&nbsp;
