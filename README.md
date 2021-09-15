@@ -60,8 +60,8 @@ Distributed under the MIT License. See [LICENSE](LICENSE.txt) for more informati
 
 Project Link: [https://github.com/dobkir/bmwX6](https://github.com/dobkir/bmwX6)
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 - [ICONS8](https://icons8.com/)
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
